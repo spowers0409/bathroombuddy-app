@@ -1,50 +1,80 @@
-# Welcome to your Expo app 👋
+# 🚻 BathroomBuddy
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**BathroomBuddy** is your go-to app for finding the *cleanest*, most *reliable*, and *highly-rated* public restrooms wherever you are. Whether you're traveling, commuting, or just out and about, BathroomBuddy helps you locate restrooms based on real-time user ratings, cleanliness, and convenience.
 
-## Get started
+---
 
-1. Install dependencies
+## 💡 What the App Does
 
-   ```bash
-   npm install
-   ```
+- Displays a map view with bathroom locations (e.g. restaurants, gas stations, stores)
+- Allows users to search by **city**, **zip**, or use their **current location**
+- Shows **1–5 star ratings**, images, address info, and navigation directions
+- Includes a **comment section** for reviews and tips
+- Users can:
+  - Add a bathroom
+  - Leave a rating and review
+  - "Heart" (favorite) locations
+  - Open a modal with bathroom details by selecting from the map or a nearby list
+- Responsive design for mobile-first experience
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## ✅ Development Status
 
-In the output, you'll find options to open the app in a
+| Feature                            | Status         |
+|------------------------------------|----------------|
+| Map with Bathroom Icons            | 🔲 Not Started |
+| Location-based Search              | 🔲 Not Started |
+| Bathroom Details Modal             | 🔲 Not Started |
+| Reviews & Ratings                  | 🔲 Not Started |
+| Add Bathroom Functionality         | 🔲 Not Started |
+| Favorite (Heart) System            | 🔲 Not Started |
+| Image Uploads                      | 🔲 Not Started |
+| Navigation Button (Maps API)       | 🔲 Not Started |
+| Comment Section                    | 🔲 Not Started |
+| Admin or Moderation Panel (Future) | 🔲 Not Started |
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🌈 Stretch Goals & Future Ideas
 
-## Get a fresh project
+- 🧻 **Bathroom Supplies Tracker** – Show if toilets have TP/soap reported
+- 🏆 **Top Rated Bathrooms** leaderboard by city or state
+- 🚻 **Gender Neutral / Family Room Filters**
+- 📷 **Upload Image with Review**
+- 🔔 **Real-time Alerts** (e.g., "Cleaned recently")
+- 📅 **Bathroom Usage History / Favorites List**
+- 🧼 **Self-Cleaning Bathroom Tracker**
+- 🗺️ **Offline Map Caching**
+- 🧪 **AI Cleanliness Predictions** using user reviews + image data
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## ☕ Support the Project
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+If you love the idea or want to help us keep building it:
 
-## Learn more
+**[💖 Buy Me a Coffee](https://www.buymeacoffee.com/bathroombuddy)**
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🌐 App Website
 
-## Join the community
+[https://bathroombuddy.app](https://bathroombuddy.app)
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+> Built with 💙 by Sam Powers and contributors.
+
+---
+
+## 🔒 License
+
+This project is protected under a **Proprietary License**.  
+All use, duplication, distribution, or modification is strictly prohibited without **explicit written permission**.
+
+See the full license terms here: [LICENSE.md](./LICENSE.md)
+
+BathroomBuddy also makes use of open-source libraries and APIs as listed in the license file.  
+No ownership is claimed over those tools, and they are used under their respective licenses.
+
