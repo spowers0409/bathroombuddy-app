@@ -37,3 +37,69 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# ====================
+# Node.js & npm
+# ====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ====================
+# Expo / React Native
+# ====================
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+*.pem
+
+# ====================
+# Git
+# ====================
+.DS_Store
+*.orig.*
+*.rej
+*.patch
+*.swp
+
+# ====================
+# Metro
+# ====================
+.metro-cache/
+.metro-health-check*
+
+# ====================
+# Environment / Secrets
+# ====================
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ====================
+# Build Tools & Typescript (if ever used)
+# ====================
+*.tsbuildinfo
+
+# ====================
+# macOS
+# ====================
+.DS_Store
+
+# ====================
+# Misc
+# ====================
+.idea/
+.vscode/
+app-example
