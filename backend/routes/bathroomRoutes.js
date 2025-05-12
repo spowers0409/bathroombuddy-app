@@ -64,4 +64,47 @@ router.post('/', async (req, res) => {
   }
 });
 
+router.get('/:id', async (req, res) => {
+    const bathroomId = req.params.id;
+
+    try {
+        const result = await pool.query(
+        `SELECT * FROM bathrooms WHERE id = $1 AND is_approved = TRUE`,
+        [bathroomId]
+        );
+
+        if (result.rows.length === 0) {
+            return res.status(404).json({ error: 'Bathroom not found or approved'});
+        }
+
+        res.json(result.rows[0]);
+    } catch (err) {
+        console.error('Error fetching bathrooms by ID:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+router.put('/:id/approve', async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const result = await pool.query(
+            `UPDATE bathrooms
+            SET is_approved = TRUE
+            WHERE id = $1
+            RETURNING *`,
+            [id]
+        );
+
+        if (result.rowCount === 0) {
+            return res.status(404).json({ error: 'Bathroom not found' });
+        }
+
+        res.json(result.rows[0]);
+    } catch (err) {
+        console.error('Error approving bathroom:', err);
+        res.status(500).json({ error: 'Internal server error'});
+    }
+});
+
 export default router;

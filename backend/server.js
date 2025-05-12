@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 
 import bathroomRoutes from './routes/bathroomRoutes.js';
+import reviewRoutes from './routes/reviewRoutes.js';
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ app.get('/ping', (req, res) => {
 });
 
 app.use('/bathrooms', bathroomRoutes);
+app.use('/reviews', reviewRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
