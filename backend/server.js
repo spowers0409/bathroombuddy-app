@@ -11,13 +11,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 10000;
 
-// ✅ Explicit allowed origins for frontend
+// Explicit allowed origins for frontend
 const allowedOrigins = [
   'http://localhost:5173',
   'https://admin.bathroombuddy.app'
 ];
 
-// ✅ CORS configuration
+// CORS configuration
 app.use(cors({
   origin: allowedOrigins,
   credentials: true
@@ -25,17 +25,17 @@ app.use(cors({
 
 app.use(express.json());
 
-// ✅ Test route
+// Test route
 app.get('/ping', (req, res) => {
   res.send("Pong");
 });
 
-// ✅ API routes (note the /api prefix here)
+// API routes (note the /api prefix here)
 app.use('/api/bathrooms', bathroomRoutes);
 app.use('/api/reviews', reviewRoutes);
 app.use('/api/admin', adminRoutes);
 
-// ✅ Start server
+// Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
