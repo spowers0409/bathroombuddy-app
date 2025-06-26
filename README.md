@@ -23,16 +23,16 @@
 
 | Feature                            | Status         |
 |------------------------------------|----------------|
-| Map with Bathroom Icons            | 🔲 Not Started |
-| Location-based Search              | 🔲 Not Started |
-| Bathroom Details Modal             | 🔲 Not Started |
+| Map with Bathroom Icons            | ✅  Finished   |
+| Location-based Search              | ✅  Finished   |
+| Bathroom Details Modal             | 🔲 In Process  |
 | Reviews & Ratings                  | 🔲 Not Started |
-| Add Bathroom Functionality         | 🔲 Not Started |
+| Add Bathroom Functionality         | ✅ In Process  |
 | Favorite (Heart) System            | 🔲 Not Started |
 | Image Uploads                      | 🔲 Not Started |
-| Navigation Button (Maps API)       | 🔲 Not Started |
+| Navigation Button (Maps API)       | ✅  Finished   |
 | Comment Section                    | 🔲 Not Started |
-| Admin or Moderation Panel (Future) | 🔲 Not Started |
+| Admin or Moderation Panel          | ✅ In Process  |
 
 ---
 
